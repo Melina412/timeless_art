@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: OstrichSans-Light;
+  src: url("../fonts/OstrichSans-Light.otf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+// -------------------- variables --------------------
+
+$tc: #fff;
+$bgc-light: #1a1a1a;
+$bgc-dark: #121212;
+
+// -------------------- mixins --------------------
+
+@mixin text-style($fs, $ff, $fw, $ls, $c) {
+  font-size: $fs;
+  font-family: $ff;
+  font-weight: $fw;
+  letter-spacing: $ls;
+  color: $c;
+}
+
+@mixin element-size($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+// * -------------------- general style --------------------
+
+body {
+  background-color: darkgrey;
+}
+
+h1 {
+  @include text-style(4rem, OstrichSans-Light, 100, 5rem, $tc);
+}
+
+h2 {
+  @include text-style(3.3rem, OstrichSans-Light, 100, 1rem, $tc);
+}
+
+h3 {
+  @include text-style(1.6rem, Helvetica, 300, 0.5rem, $tc);
+}
+
+p {
+  @include text-style(1.6rem, Helvetica, 300, 0.5rem, $tc);
+}

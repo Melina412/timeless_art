@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: OstrichSans-Light;
+  src: url("../fonts/OstrichSans-Light.otf");
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: darkgrey;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: OstrichSans-Light;
+  font-weight: 100;
+  letter-spacing: 5rem;
+  color: #fff;
+}
+
+h2 {
+  font-size: 3.3rem;
+  font-family: OstrichSans-Light;
+  font-weight: 100;
+  letter-spacing: 1rem;
+  color: #fff;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-family: Helvetica;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  color: #fff;
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: Helvetica;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
