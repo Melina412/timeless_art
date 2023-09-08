@@ -45,7 +45,13 @@ $bgc-dark: #121212;
 //  ------------------------------ general style ------------------------------
 
 h1 {
-  @include text-style(10rem, OstrichSans-Light, 100, 12rem, $tc);
+  @include text-style(
+    10rem,
+    OstrichSans-Light,
+    100,
+    clamp(4rem, 8rem, 12rem),
+    $tc
+  );
 }
 
 h2 {
@@ -74,6 +80,7 @@ hr {
     text-align: center;
     position: fixed;
     bottom: 7vh;
+    left: 2%;
     width: 100%;
     z-index: -1;
   }

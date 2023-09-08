@@ -22,7 +22,7 @@ h1 {
   font-size: 10rem;
   font-family: OstrichSans-Light;
   font-weight: 100;
-  letter-spacing: 12rem;
+  letter-spacing: 8rem;
   color: #fffaf0;
 }
 
@@ -58,6 +58,7 @@ p {
   text-align: center;
   position: fixed;
   bottom: 7vh;
+  left: 2%;
   width: 100%;
   z-index: -1;
 }
