@@ -15,7 +15,7 @@ html {
 
 // -------------------- variables --------------------
 
-$tc: #fff;
+$tc: #fffaf0;
 $bgc-light: #1a1a1a;
 $bgc-dark: #121212;
 
@@ -34,14 +34,10 @@ $bgc-dark: #121212;
   height: $h;
 }
 
-// * -------------------- general style --------------------
-
-body {
-  background-color: darkgrey;
-}
+//  ------------------------------ general style ------------------------------
 
 h1 {
-  @include text-style(4rem, OstrichSans-Light, 100, 5rem, $tc);
+  @include text-style(10rem, OstrichSans-Light, 100, 12rem, $tc);
 }
 
 h2 {
@@ -54,4 +50,90 @@ h3 {
 
 p {
   @include text-style(1.6rem, Helvetica, 300, 0.5rem, $tc);
+}
+// ! header ----------------------------------------------------------------------------------
+
+// * -------------------- header style --------------------
+
+.position-container {
+  position: relative;
+  //   height: 100vh;
+  h1 {
+    text-align: center;
+    position: absolute;
+    top: 200%;
+    width: 100%;
+    z-index: 2;
+  }
+}
+//  ??????????????????
+
+header {
+  background-image: url("../img/FJ_home_slider2.jpg");
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+// ! main ----------------------------------------------------------------------------------
+
+main {
+  // * -------------------- experience section style --------------------
+  .experience {
+    background-color: $bgc-light;
+    padding: 10rem;
+
+    .experience-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .bg-img {
+        @include element-size(80vw, 40rem);
+        background-image: url("../img/experience.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-align: center;
+        // img kann nicht bg sein weil hr darunter muss -.-
+      }
+
+      a {
+        @include text-style(1.6rem, Helvetica, 300, 0.5rem, $tc);
+        text-decoration: none;
+      }
+    }
+  }
+
+  // * -------------------- curated section style --------------------
+  .curated {
+    background-color: $bgc-dark;
+  }
+
+  // * -------------------- partnership section style --------------------
+  .partnership {
+    background-color: $bgc-light;
+  }
+
+  // * -------------------- showroom section style --------------------
+  .showroom {
+    background-color: $bgc-dark;
+  }
+
+  // * -------------------- news section style --------------------
+  .news {
+    background-color: $bgc-light;
+  }
+}
+
+// * --------------------  footer style --------------------
+
+footer {
+  position: relative;
+  z-index: 1;
 }

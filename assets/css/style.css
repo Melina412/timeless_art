@@ -12,16 +12,12 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  background-color: darkgrey;
-}
-
 h1 {
-  font-size: 4rem;
+  font-size: 10rem;
   font-family: OstrichSans-Light;
   font-weight: 100;
-  letter-spacing: 5rem;
-  color: #fff;
+  letter-spacing: 12rem;
+  color: #fffaf0;
 }
 
 h2 {
@@ -29,7 +25,7 @@ h2 {
   font-family: OstrichSans-Light;
   font-weight: 100;
   letter-spacing: 1rem;
-  color: #fff;
+  color: #fffaf0;
 }
 
 h3 {
@@ -37,7 +33,7 @@ h3 {
   font-family: Helvetica;
   font-weight: 300;
   letter-spacing: 0.5rem;
-  color: #fff;
+  color: #fffaf0;
 }
 
 p {
@@ -45,7 +41,74 @@ p {
   font-family: Helvetica;
   font-weight: 300;
   letter-spacing: 0.5rem;
-  color: #fff;
+  color: #fffaf0;
+}
+
+.position-container {
+  position: relative;
+}
+.position-container h1 {
+  text-align: center;
+  position: absolute;
+  top: 200%;
+  width: 100%;
+  z-index: 2;
+}
+
+header {
+  background-image: url("../img/FJ_home_slider2.jpg");
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+main .experience {
+  background-color: #1a1a1a;
+  padding: 10rem;
+}
+main .experience .experience-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .experience .experience-content .bg-img {
+  width: 80vw;
+  height: 40rem;
+  background-image: url("../img/experience.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+main .experience .experience-content a {
+  font-size: 1.6rem;
+  font-family: Helvetica;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  color: #fffaf0;
+  text-decoration: none;
+}
+main .curated {
+  background-color: #121212;
+}
+main .partnership {
+  background-color: #1a1a1a;
+}
+main .showroom {
+  background-color: #121212;
+}
+main .news {
+  background-color: #1a1a1a;
+}
+
+footer {
+  position: relative;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
