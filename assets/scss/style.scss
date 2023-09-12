@@ -15,7 +15,7 @@ html {
 
 // -------------------- variables --------------------
 
-$tc: #fffaf0;
+$tc: rgb(255, 250, 240);
 $bgc-light: #1a1a1a;
 $bgc-dark: #121212;
 
@@ -96,12 +96,6 @@ header {
   background-size: cover;
   position: absolute;
   z-index: -2;
-
-  .logo {
-    position: fixed;
-    top: 5%;
-    left: 3%;
-  }
 }
 
 main {
@@ -112,6 +106,13 @@ main {
     background-color: $bgc-light;
     padding: 10rem;
     height: 85rem;
+
+    .logo {
+      position: fixed;
+      top: 5%;
+      left: 3%;
+      z-index: 2;
+    }
 
     .experience-content {
       // @include element-size(80vw, 80rem);
@@ -266,6 +267,36 @@ main {
       text-align: center;
       gap: 4rem;
       margin: 0 auto 20rem auto;
+
+      h3 {
+        margin-bottom: 5rem;
+      }
+
+      .animated-text {
+        white-space: nowrap;
+        overflow: hidden;
+
+        p {
+          @include text-style(3.9rem, OstrichSans-Light, 100, 25px, $tc);
+
+          &:nth-child(1) {
+            animation: partnership1 60s linear infinite forwards;
+          }
+
+          &:nth-child(2) {
+            color: rgba(255, 250, 240, 0.8);
+            animation: partnership2 70s linear infinite forwards;
+          }
+          &:nth-child(3) {
+            color: rgba(255, 250, 240, 0.6);
+            animation: partnership3 70s linear infinite forwards;
+          }
+          &:nth-child(4) {
+            color: rgba(255, 250, 240, 0.4);
+            animation: partnership4 80s linear infinite forwards;
+          }
+        }
+      }
     }
   }
 
@@ -288,3 +319,46 @@ footer {
   z-index: -2;
   height: 20rem;
 }
+
+// * --------------------  keyframes --------------------
+
+@keyframes partnership1 {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(30%);
+  }
+}
+
+@keyframes partnership2 {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(30%);
+  }
+}
+
+@keyframes partnership3 {
+  from {
+    transform: translateX(30%);
+  }
+  to {
+    transform: translateX(-30%);
+  }
+}
+
+@keyframes partnership4 {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(30%);
+  }
+}
+
+//? es fehlt noch:
+//?
+//? - section style partnership, showroom, news, footer
+//? - link animations‚

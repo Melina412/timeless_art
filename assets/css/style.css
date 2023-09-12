@@ -14,7 +14,7 @@ html {
 
 .hr_style, main .curated .curated-images .item .hover-effect .hover-text hr, hr {
   border: none;
-  background-color: #fffaf0;
+  background-color: rgb(255, 250, 240);
   height: 1px;
 }
 
@@ -23,7 +23,7 @@ h1 {
   font-family: OstrichSans-Light;
   font-weight: 100;
   letter-spacing: 8rem;
-  color: #fffaf0;
+  color: rgb(255, 250, 240);
 }
 
 h2 {
@@ -31,7 +31,7 @@ h2 {
   font-family: OstrichSans-Light;
   font-weight: 100;
   letter-spacing: 1rem;
-  color: #fffaf0;
+  color: rgb(255, 250, 240);
 }
 
 h3 {
@@ -39,7 +39,7 @@ h3 {
   font-family: Helvetica;
   font-weight: 300;
   letter-spacing: 0.5rem;
-  color: #fffaf0;
+  color: rgb(255, 250, 240);
 }
 
 p {
@@ -47,7 +47,7 @@ p {
   font-family: Helvetica;
   font-weight: 300;
   letter-spacing: 0.5rem;
-  color: #fffaf0;
+  color: rgb(255, 250, 240);
 }
 
 .position-container {
@@ -74,11 +74,6 @@ header {
   position: absolute;
   z-index: -2;
 }
-header .logo {
-  position: fixed;
-  top: 5%;
-  left: 3%;
-}
 
 main {
   overflow-x: hidden;
@@ -88,6 +83,12 @@ main .experience {
   background-color: #1a1a1a;
   padding: 10rem;
   height: 85rem;
+}
+main .experience .logo {
+  position: fixed;
+  top: 5%;
+  left: 3%;
+  z-index: 2;
 }
 main .experience .experience-content {
   display: flex;
@@ -128,7 +129,7 @@ main .experience .experience-content a {
   font-family: Helvetica;
   font-weight: 300;
   letter-spacing: 0.5rem;
-  color: #fffaf0;
+  color: rgb(255, 250, 240);
   text-decoration: none;
 }
 main .curated {
@@ -220,6 +221,35 @@ main .partnership .partnership-text {
   gap: 4rem;
   margin: 0 auto 20rem auto;
 }
+main .partnership .partnership-text h3 {
+  margin-bottom: 5rem;
+}
+main .partnership .partnership-text .animated-text {
+  white-space: nowrap;
+  overflow: hidden;
+}
+main .partnership .partnership-text .animated-text p {
+  font-size: 3.9rem;
+  font-family: OstrichSans-Light;
+  font-weight: 100;
+  letter-spacing: 25px;
+  color: rgb(255, 250, 240);
+}
+main .partnership .partnership-text .animated-text p:nth-child(1) {
+  animation: partnership1 60s linear infinite forwards;
+}
+main .partnership .partnership-text .animated-text p:nth-child(2) {
+  color: rgba(255, 250, 240, 0.8);
+  animation: partnership2 70s linear infinite forwards;
+}
+main .partnership .partnership-text .animated-text p:nth-child(3) {
+  color: rgba(255, 250, 240, 0.6);
+  animation: partnership3 70s linear infinite forwards;
+}
+main .partnership .partnership-text .animated-text p:nth-child(4) {
+  color: rgba(255, 250, 240, 0.4);
+  animation: partnership4 80s linear infinite forwards;
+}
 main .showroom {
   background-color: #121212;
 }
@@ -232,6 +262,39 @@ footer {
   position: relative;
   z-index: -2;
   height: 20rem;
+}
+
+@keyframes partnership1 {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(30%);
+  }
+}
+@keyframes partnership2 {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(30%);
+  }
+}
+@keyframes partnership3 {
+  from {
+    transform: translateX(30%);
+  }
+  to {
+    transform: translateX(-30%);
+  }
+}
+@keyframes partnership4 {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(30%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
