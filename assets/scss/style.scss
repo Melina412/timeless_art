@@ -282,7 +282,6 @@ main {
           &:nth-child(1) {
             animation: partnership1 60s linear infinite forwards;
           }
-
           &:nth-child(2) {
             color: rgba(255, 250, 240, 0.8);
             animation: partnership2 70s linear infinite forwards;
@@ -303,11 +302,110 @@ main {
   // * -------------------- showroom section style --------------------
   .showroom {
     background-color: $bgc-dark;
+    padding: 20rem 0;
+    margin: 0 auto;
+
+    .showroom-bg-img {
+      @include element-size(90vw, 60rem);
+      max-width: 1400px;
+      background-image: url("../img/showroom.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      margin: 0 auto;
+
+      .showroom-text {
+        @include element-size(50%, auto);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 50%;
+        padding-top: 5rem;
+        gap: 5rem;
+
+        h2 {
+          font-size: 8rem;
+          letter-spacing: 50px;
+        }
+
+        div {
+          @include element-size(45%, auto);
+
+          p {
+            padding: 2rem 0;
+          }
+
+          a {
+            @include text-style(1.6rem, Helvetica, 300, 0.5rem, $tc);
+            display: block;
+            text-decoration: none;
+            margin: 2rem 0;
+          }
+        }
+      }
+    }
   }
 
   // * -------------------- news section style --------------------
   .news {
     background-color: $bgc-light;
+    padding: 20rem 0;
+    margin: 0 auto;
+    width: 100vw;
+
+    div {
+      @include element-size(25vw, 15rem);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .news-text {
+      @include element-size(50%, auto);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+
+      h2 {
+        padding: 5rem 0;
+      }
+
+      .news-img-middle {
+        position: relative;
+        img {
+          @include element-size(auto, 15rem);
+          position: absolute;
+          z-index: 1;
+          align-self: center;
+        }
+
+        hr {
+          position: absolute;
+          z-index: 0;
+          width: 80vw;
+          margin: 18rem 0;
+        }
+      }
+
+      p {
+        text-align: center;
+        &:nth-of-type(1) {
+          @include text-style(3.3rem, OstrichSans-Light, 100, 0px, $tc);
+          width: 35%;
+        }
+      }
+    }
+
+    .news-img-left {
+      background-image: url("../img/omega131-63-41-21-01-001amb-jpg-2.-1024x683.jpg");
+    }
+
+    .news-img-right {
+      background-image: url("../img/01_chronomat-b01-42-with-a-silver-dial-and-black-contrasting-chronograph-counters-1024x579.jpg");
+    }
   }
 }
 

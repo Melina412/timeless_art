@@ -252,9 +252,108 @@ main .partnership .partnership-text .animated-text p:nth-child(4) {
 }
 main .showroom {
   background-color: #121212;
+  padding: 20rem 0;
+  margin: 0 auto;
+}
+main .showroom .showroom-bg-img {
+  width: 90vw;
+  height: 60rem;
+  max-width: 1400px;
+  background-image: url("../img/showroom.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+}
+main .showroom .showroom-bg-img .showroom-text {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50%;
+  padding-top: 5rem;
+  gap: 5rem;
+}
+main .showroom .showroom-bg-img .showroom-text h2 {
+  font-size: 8rem;
+  letter-spacing: 50px;
+}
+main .showroom .showroom-bg-img .showroom-text div {
+  width: 45%;
+  height: auto;
+}
+main .showroom .showroom-bg-img .showroom-text div p {
+  padding: 2rem 0;
+}
+main .showroom .showroom-bg-img .showroom-text div a {
+  font-size: 1.6rem;
+  font-family: Helvetica;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  color: rgb(255, 250, 240);
+  display: block;
+  text-decoration: none;
+  margin: 2rem 0;
 }
 main .news {
   background-color: #1a1a1a;
+  padding: 20rem 0;
+  margin: 0 auto;
+  width: 100vw;
+}
+main .news div {
+  width: 25vw;
+  height: 15rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .news .news-text {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+main .news .news-text h2 {
+  padding: 5rem 0;
+}
+main .news .news-text .news-img-middle {
+  position: relative;
+}
+main .news .news-text .news-img-middle img {
+  width: auto;
+  height: 15rem;
+  position: absolute;
+  z-index: 1;
+  align-self: center;
+}
+main .news .news-text .news-img-middle hr {
+  position: absolute;
+  z-index: 0;
+  width: 80vw;
+  margin: 18rem 0;
+}
+main .news .news-text p {
+  text-align: center;
+}
+main .news .news-text p:nth-of-type(1) {
+  font-size: 3.3rem;
+  font-family: OstrichSans-Light;
+  font-weight: 100;
+  letter-spacing: 0px;
+  color: rgb(255, 250, 240);
+  width: 35%;
+}
+main .news .news-img-left {
+  background-image: url("../img/omega131-63-41-21-01-001amb-jpg-2.-1024x683.jpg");
+}
+main .news .news-img-right {
+  background-image: url("../img/01_chronomat-b01-42-with-a-silver-dial-and-black-contrasting-chronograph-counters-1024x579.jpg");
 }
 
 footer {
